@@ -1,0 +1,16 @@
+{
+    "baseUrl": "http://test.getgrex.com/",
+    "chromeWebSecurity": false,
+    "integrationFolder": "cypress/tests/",
+    "numTestsKeptInMemory": 1,
+    "video": false,
+    "defaultCommandTimeout": 10000,
+    "screenshotsFolder": "cypress/results/assets/",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results/",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+}

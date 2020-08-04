@@ -1,0 +1,30 @@
+{
+  "name": "onemineral",
+  "version": "1.0.0",
+  "description": "One Mineral QA Test Challenge Resolution",
+  "main": "index.js",
+  "scripts": {
+    " --- CYPRESS SCRIPTS ---- ": "",
+    "cy:open": "cypress open",
+    "cy:run:chrome": "yarn cy:clean:results; cypress run --browser chrome --reporter mochawesome; yarn cy:results",
+    "cy:run:headless": "yarn cy:clean:results; cypress run --headless --reporter mochawesome; yarn cy:results",
+    " --- MOCHAWESOME REPORT SCRIPTS ---- ": "",
+    "cy:results": "yarn cy:merge:results; yarn cy:final:results",
+    "cy:clean:results": "rm -rf cypress/results/*",
+    "cy:merge:results": "mochawesome-merge cypress/results/*.json > cypress/results/output.json",
+    "cy:final:results": "marge cypress/results/output.json --reportDir cypress/results/"
+  },
+  "keywords": [
+    "JavaScript",
+    "Cypress",
+    "OneMineral"
+  ],
+  "author": "William Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.12.0",
+    "mocha": "^8.1.1",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0"
+  }
+}
