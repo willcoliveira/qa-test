@@ -107,4 +107,4 @@ Also, If the test fails it will show the exactly step and a screenshot of that m
 ================================================
 
 ### Manual Test Part - Introduction
-The application under test were tested using Chrome and it is possible to see it's bugs [here](/BUGS.md).
+The application under test were tested using Chrome and it is possible to see it's bugs [BUGs](BUG.md)
